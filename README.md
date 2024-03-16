@@ -1,1 +1,1 @@
-# MadelineZitella.github.io
+theme: jekyll-theme-theme-minimal
