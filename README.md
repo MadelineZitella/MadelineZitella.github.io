@@ -1,7 +1,7 @@
 ## Education
-### University of Notre Dame 
+### University of Notre Dame | Notre Dame, IN
 B.S. Computer Science | Class of 2026 
-### Carmel Catholic High School 
+### Carmel Catholic High School | Mundelein, IL
 Class of 2022
 
 ## Work Experience 
