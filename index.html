@@ -14,8 +14,8 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#connect">Connect</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </ul>
         </div>
@@ -31,11 +31,213 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#connect" onclick="toggleMenu()">Connect</a></li>
+                <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/HeadShot-circle.png" alt="Maddie's profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello! My Name Is</p>
+            <h1 class="title">Maddie Zitella</h1>
+            <body>
+                <p class="section__text__p2"><span class="auto-type"></span></p>
+
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed= new Typed(".auto-type", {
+                        strings: ["Software Engineer", "Student", "Doodle-er" ,"ND Fan"], 
+                        typeSpeed: 115, 
+                        backSpeed: 90, 
+                        loop: true
+                    })
+                </script>
+            </body>
+            <div class="btn-container">
+                <!-- <button class="btn btn-color-2" onclick="window.open('./assets/')">
+
+                </button> -->
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="maddie's linkedin profile"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/in/madeline-zitella'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="maddie's github profile"
+                class="icon"
+                onclick="location.href='https://github.com/MadelineZitella'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic.jpeg" 
+                alt="maddie's profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png"
+                        alt="experience icon"
+                        class="icon"
+                        />
+                        <h2>Internship Experience</h2>
+                        <p>Epsilon<i> - Chicago, IL</i><br>ELLA Engineering<i> - Elk Grove, IL</i></p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png"
+                        alt="education icon"
+                        class="icon"
+                        />
+                        <h2>Education</h2>
+                        <p>Computer Science @ the University of Notre Dame<br> Expected Graduation: May 2026</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a junior at the University of Notre Dame studying Computer Science. I have experience in back-end and fullstack development and have interned at Epsilon and ELLA Engineering. I am driven, detailed, and enjoy learning how things work (personal website creation included). Expanding my knowledge of software development has proven to be an immensely rewarding experience thus far, and I am eager to find more opportunities to do so this Summer, 2025.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Here is some of my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Epsilon</h2>
+                    <h4>[Chicago, IL | Internship | Summer 2024]</h3><br>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Email Framework</h3>
+                                <p><br>- Restructured internal email notification system which sent critical alerts to internal engineering teams and company personnel.</p><br>
+                                <p>- Leveraged <b>PostgreSQL</b> and <a href=”https://typeorm.io/”><b>TypeORM</b></a> to create a model, and developed a new, strealined service to handle notifications with <b>TypeScript</b> and <a href=”https://jestjs.io/”><b>Jest</b></a>.</p><br>
+                                <p>- Utilized <b>HTML</b> and <a href=”https://mozilla.github.io/nunjucks/”><b>Nunjucks</b></a> templating to make dynamic email content possible, reducing time needed to deploy email edits from 2-4 weeks to just seconds.</p><br>
+                                <p>- Explored <b>AWS Lambda</b> and <b>SQS</b> for testing and handling alert queues.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div> 
+                                <h3>Client Facing UI</h3>
+                                <p><br>- Enhanced UI simplicity for clients by integrating account details into each marketing destination using <b>Angular</b> and <b>CSS</b>.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">ELLA Engineering</h2>
+                    <h4>[Elk Grove, IL | Internship | Summer 2023]</h3><br>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                            alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Data Optiminzation</h3>
+                                <p><br>- Optimized <b>SQL</b> queries to enhance data display and performed analytics to determine overhead burden costs, presented findings to sales department to address loss areas.</p><br>
+                                <p>- Collaborated and learned from developers to build and troubleshoot programs, install hardware, and perform security scans and updates.</p><br>
+                            </div>
+                        </article>
+                    </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Human Computer Interaction Lab - Professor Metoyer</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png"
+                                alt="experience icon"
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>Notre Dame Undergraduate Research </h3>
+                                    <p><br>- I am a member of <a href=”https://www.nd.edu/stories/oasis-in-the-desert/”><b>Prof. Metoyer's research lab</b></a> this coming Fall 2024. More to come!</p><br>
+                                </div>
+                            </article>
+                        </div>
+                        </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Please reach out!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:mzitella@nc.edu">mzitella@nd.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <!-- <li><a href="#projects">Projects</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
